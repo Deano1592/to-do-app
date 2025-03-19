@@ -112,3 +112,14 @@ form {
 .delete-btn:hover svg {
   fill: darkred;
 }
+
+.custom-checkbox {
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
