@@ -6,4 +6,13 @@ let allTodos = [];
 
 todoForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  addTodo();
 });
+
+const addTodo = () => {
+  const todoText = todoInput.value.trim();
+  if (todoText.length > 0) {
+    allTodos.push(todoText);
+    todoInput.value = "";
+  }
+};
