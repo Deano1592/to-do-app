@@ -15,14 +15,15 @@
 .to-do-app {
   width: 100%;
   max-width: 540px;
-  background: whitesmoke;
+  background: #fff;
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
+  border: 4px solid #ff5945;
 }
 
 .to-do-app h2 {
-  color: #c8af00;
+  color: #082e3c;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -37,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: lightgrey;
+  background: #edeef0;
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -57,7 +58,7 @@ button {
   padding: 16px 50px;
   border-radius: 40px;
   background: #ff5945;
-  color: whitesmoke;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
@@ -91,4 +92,21 @@ ul li.checked {
 
 ul li.checked:before {
   background-image: url(icons/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
 }
