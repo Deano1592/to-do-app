@@ -3,6 +3,11 @@ const button = document.querySelector("button");
 const listContainer = document.getElementById("list-container");
 
 button.addEventListener("click", addTask);
+inputBox.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    addTask();
+  }
+});
 
 function addTask() {
   if (inputBox.value === "") {
